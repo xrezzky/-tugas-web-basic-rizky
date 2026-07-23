@@ -21,11 +21,11 @@
     <!-- NAVBAR -->
     <nav>
         <div class="logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 2L4 10V26H28V10L16 2Z" stroke="#E8C9A0" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M16 10L20 14V22L16 26L12 22V14L16 10Z" stroke="#E8C9A0" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M10 14H22" stroke="#E8C9A0" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="16" cy="18" r="2" fill="#E8C9A0"/>
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 3L5 11V27H29V11L17 3Z" stroke="#E8C9A0" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M17 11L21 15V23L17 27L13 23V15L17 11Z" stroke="#E8C9A0" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M11 15H23" stroke="#E8C9A0" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="17" cy="19" r="2" fill="#E8C9A0"/>
             </svg>
             <span>Pesona</span> Sumatera Barat
         </div>
@@ -50,10 +50,10 @@
         <img id="heroImage" src="images/hero.jpg" alt="Keindahan Sumatera Barat" />
         <div class="overlay"></div>
         <div class="hero-content">
-            <span class="hero-tag">Wonderful Indonesia</span>
+            <span class="hero-tag">🏷️ Wonderful Indonesia</span>
             <h1>Selamat Datang di <br />Ranah Minang</h1>
             <p>
-                Nikmati pesona alam, warisan budaya Minangkabau, dan cita rasa kuliner khas 
+                Nikmati pesona alam, warisan budaya Minangkabau, dan cita rasa kuliner khas
                 yang mendunia. Dari Lembah Harau hingga rendang, semua ada di sini.
             </p>
             <div class="hero-button">
@@ -73,12 +73,12 @@
         <div class="profil-container">
             <img src="images/rumah-gadang.jpg" alt="Rumah Gadang" />
             <div class="profil-text">
-                <h3>Ranah Minang</h3>
+                <h3>🏡 Ranah Minang</h3>
                 <p>
-                    Sumatera Barat adalah rumah bagi etnis Minangkabau yang kaya akan tradisi, 
-                    falsafah "Adat Basandi Syarak, Syarak Basandi Kitabullah", serta keindahan 
-                    alam yang mempesona. Dari Danau Maninjau yang tenang hingga kelezatan 
-                    Rendang yang mendunia, setiap sudutnya menyimpan cerita dan kehangatan 
+                    Sumatera Barat adalah rumah bagi etnis Minangkabau yang kaya akan tradisi,
+                    falsafah <em>"Adat Basandi Syarak, Syarak Basandi Kitabullah"</em>, serta keindahan
+                    alam yang mempesona. Dari Danau Maninjau yang tenang hingga kelezatan
+                    Rendang yang mendunia, setiap sudutnya menyimpan cerita dan kehangatan
                     budaya yang tak terlupakan.
                 </p>
             </div>
@@ -201,6 +201,15 @@
                     <button onclick="openDetail('Pantai Air Manis', 'images/pantai-air-manis.jpg', 'Pantai Air Manis merupakan pantai terkenal di Kota Padang dengan legenda Malin Kundang. Pantai ini memiliki pasir putih dan pemandangan laut yang indah, serta menjadi tempat wisata budaya yang populer.')">Lihat Detail</button>
                 </div>
             </div>
+            <!-- Ngarai Sianok -->
+            <div class="wisata-card">
+                <img src="images/ngarai-sianok.jpg" alt="Ngarai Sianok" />
+                <div class="card-content">
+                    <h3>Ngarai Sianok</h3>
+                    <p>Jurang hijau nan eksotis di Bukittinggi.</p>
+                    <button onclick="openDetail('Ngarai Sianok', 'images/ngarai-sianok.jpg', 'Ngarai Sianok adalah jurang yang membentang di Kota Bukittinggi dengan pemandangan hijau yang memukau. Dikenal juga sebagai ''Grand Canyon''-nya Indonesia, tempat ini sangat populer untuk menikmati sunrise dan sunset.')">Lihat Detail</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -208,7 +217,7 @@
     <section id="budaya">
         <div class="section-title">
             <h2>Budaya Minangkabau</h2>
-            <p>Warisan budaya khas Sumatera Barat.</p>
+            <p>Warisan budaya khas Sumatera Barat yang lestari.</p>
         </div>
         <div class="card-container">
             <!-- Tari Piring -->
@@ -217,7 +226,7 @@
                 <div class="card-content">
                     <h3>Tari Piring</h3>
                     <p>Tarian tradisional menggunakan piring sebagai properti.</p>
-                    <button onclick="openDetail('Tari Piring', 'images/tari-piring.jpg', 'Tari Piring adalah tarian tradisional Minangkabau yang menggambarkan rasa syukur masyarakat melalui gerakan membawa piring. Tarian ini dikenal dengan gerakan yang dinamis dan atraktif.')">Lihat Detail</button>
+                    <button onclick="openDetail('Tari Piring', 'images/tari-piring.jpg', 'Tari Piring adalah tarian tradisional Minangkabau yang menggambarkan rasa syukur masyarakat melalui gerakan membawa piring. Tarian ini dikenal dengan gerakan yang dinamis dan atraktif, sering ditampilkan dalam acara adat dan perayaan.')">Lihat Detail</button>
                 </div>
             </div>
             <!-- Tari Pasambahan -->
@@ -225,37 +234,38 @@
                 <img src="images/tari-pasambahan.jpg" alt="Tari Pasambahan" />
                 <div class="card-content">
                     <h3>Tari Pasambahan</h3>
-                    <p>Tarian penyambutan khas Minangkabau.</p>
-                    <button onclick="openDetail('Tari Pasambahan', 'images/tari-pasambahan.jpg', 'Tari Pasambahan merupakan tarian adat Minangkabau yang biasa digunakan untuk menyambut tamu kehormatan. Tarian ini mencerminkan keramahan dan kehormatan masyarakat Minang.')">Lihat Detail</button>
+                    <p>Tarian penyambutan tamu kehormatan khas Minang.</p>
+                    <button onclick="openDetail('Tari Pasambahan', 'images/tari-pasambahan.jpg', 'Tari Pasambahan merupakan tarian adat Minangkabau yang biasa digunakan untuk menyambut tamu kehormatan. Tarian ini mencerminkan keramahan, kehormatan, dan kebanggaan masyarakat Minang terhadap tamunya.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Pacu Jawi -->
+            <div class="budaya-card">
+                <img src="images/pacu-jawi.jpg" alt="Pacu Jawi" />
+                <div class="card-content">
+                    <h3>Pacu Jawi</h3>
+                    <p>Tradisi pacuan sapi khas Tanah Datar, Sumatera Barat.</p>
+                    <button onclick="openDetail('Pacu Jawi', 'images/pacu-jawi.jpg', 'Pacu Jawi adalah tradisi pacuan sapi yang berasal dari Kabupaten Tanah Datar, Sumatera Barat. Dilakukan di sawah berlumpur, tradisi ini menjadi ajang silaturahmi sekaligus hiburan bagi masyarakat. Biasanya digelar setelah panen padi sebagai ungkapan syukur.')">Lihat Detail</button>
                 </div>
             </div>
         </div>
     </section>
-    
-        <!-- Pacu Jawi -->
-        <div class="budaya-card">
-            <img src="images/pacu-jawi.jpg" alt="Pacu Jawi" />
-            <div class="card-content">
-                <h3>Pacu Jawi</h3>
-                <p>Tradisi pacuan sapi khas Tanah Datar, Sumatera Barat.</p>
-                <button onclick="openDetail('Pacu Jawi', 'images/pacu-jawi.jpg', 'Pacu Jawi adalah tradisi pacuan sapi yang berasal dari Kabupaten Tanah Datar, Sumatera Barat. Dilakukan di sawah berlumpur, tradisi ini menjadi ajang silaturahmi sekaligus hiburan bagi masyarakat. Biasanya digelar setelah panen padi sebagai ungkapan syukur.')">Lihat Detail</button>
-            </div>
-        </div>
-    </div>
-</section>
+
     <!-- GALERI -->
     <section id="galeri">
         <div class="section-title">
-            <h2>Galeri Foto</h2>
-            <p>Kumpulan foto keindahan Sumatera Barat.</p>
+            <h2>Galeri Pesona Sumatera Barat</h2>
+            <p>Klik foto untuk melihat lebih detail.</p>
         </div>
         <div class="gallery-container">
-            <img src="images/hero.jpg" alt="Hero Sumatera Barat" onclick="openGallery(this.src)" />
+            <img src="images/hero.jpg" alt="Keindahan Sumatera Barat" onclick="openGallery(this.src)" />
+            <img src="images/rumah-gadang.jpg" alt="Rumah Gadang" onclick="openGallery(this.src)" />
+            <img src="images/jam-gadang.jpg" alt="Jam Gadang" onclick="openGallery(this.src)" />
+            <img src="images/danau-maninjau.jpg" alt="Danau Maninjau" onclick="openGallery(this.src)" />
+            <img src="images/lembah-harau.jpg" alt="Lembah Harau" onclick="openGallery(this.src)" />
             <img src="images/ngarai-sianok.jpg" alt="Ngarai Sianok" onclick="openGallery(this.src)" />
+            <img src="images/rendang.jpg" alt="Rendang" onclick="openGallery(this.src)" />
+            <img src="images/tari-piring.jpg" alt="Tari Piring" onclick="openGallery(this.src)" />
             <img src="images/pacu-jawi.jpg" alt="Pacu Jawi" onclick="openGallery(this.src)" />
-            <img src="images/lamang.jpg" alt="Lamang" onclick="openGallery(this.src)" />
-            <img src="images/teh-talua.jpg" alt="Teh Talua" onclick="openGallery(this.src)" />
-            <img src="images/aia-kawa.jpg" alt="Aia Kawa" onclick="openGallery(this.src)" />
         </div>
     </section>
 
@@ -309,4 +319,4 @@
 
     <script src="script.js"></script>
 </body>
-          </html>
+                </html>
