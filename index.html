@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesona Sumatera Barat</title>
+    <meta name="description" content="Wisata, budaya, dan kuliner khas Sumatera Barat" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <h2>Pesona Sumatera Barat</h2>
+            <p>Memuat keindahan Ranah Minang...</p>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L4 10V26H28V10L16 2Z" stroke="#E8C9A0" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M16 10L20 14V22L16 26L12 22V14L16 10Z" stroke="#E8C9A0" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M10 14H22" stroke="#E8C9A0" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="16" cy="18" r="2" fill="#E8C9A0"/>
+            </svg>
+            <span>Pesona</span> Sumatera Barat
+        </div>
+        <div class="menu">
+            <a href="#home">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#kuliner">Kuliner</a>
+            <a href="#wisata">Wisata</a>
+            <a href="#budaya">Budaya</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#booking">Booking</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <img id="heroImage" src="images/hero.jpg" alt="Keindahan Sumatera Barat" />
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Wonderful Indonesia</span>
+            <h1>Selamat Datang di <br />Ranah Minang</h1>
+            <p>
+                Nikmati pesona alam, warisan budaya Minangkabau, dan cita rasa kuliner khas 
+                yang mendunia. Dari Lembah Harau hingga rendang, semua ada di sini.
+            </p>
+            <div class="hero-button">
+                <a href="#profil" class="btn-primary">Jelajahi</a>
+                <a href="#booking" class="btn-secondary">Pesan Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROFIL -->
+    <section id="profil">
+        <div class="section-title">
+            <span>Tentang</span>
+            <h2>Profil Sumatera Barat</h2>
+            <p>Daerah dengan budaya Minangkabau, alam memukau, dan kuliner legendaris.</p>
+        </div>
+        <div class="profil-container">
+            <img src="images/rumah-gadang.jpg" alt="Rumah Gadang" />
+            <div class="profil-text">
+                <h3>Ranah Minang</h3>
+                <p>
+                    Sumatera Barat adalah rumah bagi etnis Minangkabau yang kaya akan tradisi, 
+                    falsafah "Adat Basandi Syarak, Syarak Basandi Kitabullah", serta keindahan 
+                    alam yang mempesona. Dari Danau Maninjau yang tenang hingga kelezatan 
+                    Rendang yang mendunia, setiap sudutnya menyimpan cerita dan kehangatan 
+                    budaya yang tak terlupakan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KULINER -->
+    <section id="kuliner">
+        <div class="section-title">
+            <h2>Kuliner Khas Sumatera Barat</h2>
+            <p>Nikmati berbagai makanan dan minuman khas Minangkabau.</p>
+        </div>
+        <div class="card-container">
+            <!-- Rendang -->
+            <div class="food-card">
+                <img src="images/rendang.jpg" alt="Rendang" />
+                <div class="card-content">
+                    <h3>Rendang</h3>
+                    <p>Masakan khas Minangkabau dengan rempah yang kaya.</p>
+                    <button onclick="openDetail('Rendang', 'images/rendang.jpg', 'Rendang merupakan makanan khas Minangkabau berbahan daging dengan proses memasak lama menggunakan berbagai rempah pilihan. Diakui sebagai salah satu makanan terlezat di dunia.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Sate Padang -->
+            <div class="food-card">
+                <img src="images/sate-padang.jpg" alt="Sate Padang" />
+                <div class="card-content">
+                    <h3>Sate Padang</h3>
+                    <p>Sate khas Sumatera Barat dengan kuah rempah.</p>
+                    <button onclick="openDetail('Sate Padang', 'images/sate-padang.jpg', 'Sate Padang adalah makanan khas Minang dengan kuah rempah yang memiliki cita rasa kuat dan khas. Biasanya disajikan dengan lontong atau ketupat.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Dendeng Balado -->
+            <div class="food-card">
+                <img src="images/dendeng-balado.jpg" alt="Dendeng Balado" />
+                <div class="card-content">
+                    <h3>Dendeng Balado</h3>
+                    <p>Daging sapi dengan sambal balado khas Minang.</p>
+                    <button onclick="openDetail('Dendeng Balado', 'images/dendeng-balado.jpg', 'Dendeng Balado merupakan olahan daging sapi khas Minangkabau dengan sambal balado yang pedas dan gurih. Cocok dinikmati dengan nasi hangat.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Aia Kawa -->
+            <div class="food-card">
+                <img src="images/aia-kawa.jpg" alt="Aia Kawa" />
+                <div class="card-content">
+                    <h3>Aia Kawa</h3>
+                    <p>Minuman khas Minangkabau berbahan daun kopi.</p>
+                    <button onclick="openDetail('Aia Kawa', 'images/aia-kawa.jpg', 'Aia Kawa adalah minuman tradisional khas Minangkabau yang dibuat dari daun kopi yang diseduh seperti teh. Minuman ini memiliki aroma khas dan sering disajikan dalam acara adat maupun sebagai minuman sehari-hari.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Teh Talua -->
+            <div class="food-card">
+                <img src="images/teh-talua.jpg" alt="Teh Talua" />
+                <div class="card-content">
+                    <h3>Teh Talua</h3>
+                    <p>Minuman khas Minangkabau berbahan teh dan telur.</p>
+                    <button onclick="openDetail('Teh Talua', 'images/teh-talua.jpg', 'Teh Talua adalah minuman tradisional khas Minangkabau yang dibuat dari campuran teh, telur ayam atau bebek, gula, dan jeruk nipis. Minuman ini terkenal dengan rasa khas dan sering disajikan di warung tradisional Minang.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Lamang Tapai -->
+            <div class="food-card">
+                <img src="images/lamang.jpg" alt="Lamang Tapai" />
+                <div class="card-content">
+                    <h3>Lamang Tapai</h3>
+                    <p>Lamang tapai khas Bukittinggi.</p>
+                    <button onclick="openDetail('Lamang Tapai', 'images/lamang.jpg', 'Lamang Tapai adalah makanan tradisional khas Minangkabau, Sumatera Barat, yang terdiri dari lamang (ketan yang dimasak dalam bambu) dan tapai (ketan fermentasi). Biasanya disajikan sebagai oleh-oleh khas.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Gulai Itiak -->
+            <div class="food-card">
+                <img src="images/gulai-itiak.jpg" alt="Gulai Itiak" />
+                <div class="card-content">
+                    <h3>Gulai Itiak</h3>
+                    <p>Gulai bebek khas Bukittinggi.</p>
+                    <button onclick="openDetail('Gulai Itiak', 'images/gulai-itiak.jpg', 'Gulai Itiak adalah masakan khas Minang berbahan bebek dengan kuah gulai yang kaya rempah. Memiliki cita rasa gurih dan sedikit pedas yang menggugah selera.')">Lihat Detail</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WISATA -->
+    <section id="wisata">
+        <div class="section-title">
+            <h2>Wisata Populer Sumatera Barat</h2>
+            <p>Destinasi alam dan sejarah yang wajib dikunjungi.</p>
+        </div>
+        <div class="card-container">
+            <!-- Jam Gadang -->
+            <div class="wisata-card">
+                <img src="images/jam-gadang.jpg" alt="Jam Gadang" />
+                <div class="card-content">
+                    <h3>Jam Gadang</h3>
+                    <p>Ikon Kota Bukittinggi yang menjadi simbol Sumatera Barat.</p>
+                    <button onclick="openDetail('Jam Gadang', 'images/jam-gadang.jpg', 'Jam Gadang merupakan menara jam bersejarah yang menjadi ikon Kota Bukittinggi dan salah satu tujuan wisata populer Sumatera Barat. Dibangun pada tahun 1926, menara ini memiliki arsitektur khas dengan atap gonjong bergaya Minangkabau.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Danau Maninjau -->
+            <div class="wisata-card">
+                <img src="images/danau-maninjau.jpg" alt="Danau Maninjau" />
+                <div class="card-content">
+                    <h3>Danau Maninjau</h3>
+                    <p>Danau indah dengan pemandangan perbukitan.</p>
+                    <button onclick="openDetail('Danau Maninjau', 'images/danau-maninjau.jpg', 'Danau Maninjau merupakan danau vulkanik dengan panorama alam yang indah dan udara yang sejuk. Terletak di Kabupaten Agam, danau ini menjadi destinasi favorit untuk bersantai dan menikmati keindahan alam.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Lembah Harau -->
+            <div class="wisata-card">
+                <img src="images/lembah-harau.jpg" alt="Lembah Harau" />
+                <div class="card-content">
+                    <h3>Lembah Harau</h3>
+                    <p>Lembah dengan tebing tinggi dan air terjun.</p>
+                    <button onclick="openDetail('Lembah Harau', 'images/lembah-harau.jpg', 'Lembah Harau adalah kawasan wisata alam dengan tebing batu tinggi, sawah hijau, dan air terjun yang indah. Terletak di Kabupaten Lima Puluh Kota, tempat ini populer untuk hiking dan fotografi.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Pantai Air Manis -->
+            <div class="wisata-card">
+                <img src="images/pantai-air-manis.jpg" alt="Pantai Air Manis" />
+                <div class="card-content">
+                    <h3>Pantai Air Manis</h3>
+                    <p>Pantai terkenal dengan legenda Malin Kundang.</p>
+                    <button onclick="openDetail('Pantai Air Manis', 'images/pantai-air-manis.jpg', 'Pantai Air Manis merupakan pantai terkenal di Kota Padang dengan legenda Malin Kundang. Pantai ini memiliki pasir putih dan pemandangan laut yang indah, serta menjadi tempat wisata budaya yang populer.')">Lihat Detail</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUDAYA -->
+    <section id="budaya">
+        <div class="section-title">
+            <h2>Budaya Minangkabau</h2>
+            <p>Warisan budaya khas Sumatera Barat.</p>
+        </div>
+        <div class="card-container">
+            <!-- Tari Piring -->
+            <div class="budaya-card">
+                <img src="images/tari-piring.jpg" alt="Tari Piring" />
+                <div class="card-content">
+                    <h3>Tari Piring</h3>
+                    <p>Tarian tradisional menggunakan piring sebagai properti.</p>
+                    <button onclick="openDetail('Tari Piring', 'images/tari-piring.jpg', 'Tari Piring adalah tarian tradisional Minangkabau yang menggambarkan rasa syukur masyarakat melalui gerakan membawa piring. Tarian ini dikenal dengan gerakan yang dinamis dan atraktif.')">Lihat Detail</button>
+                </div>
+            </div>
+            <!-- Tari Pasambahan -->
+            <div class="budaya-card">
+                <img src="images/tari-pasambahan.jpg" alt="Tari Pasambahan" />
+                <div class="card-content">
+                    <h3>Tari Pasambahan</h3>
+                    <p>Tarian penyambutan khas Minangkabau.</p>
+                    <button onclick="openDetail('Tari Pasambahan', 'images/tari-pasambahan.jpg', 'Tari Pasambahan merupakan tarian adat Minangkabau yang biasa digunakan untuk menyambut tamu kehormatan. Tarian ini mencerminkan keramahan dan kehormatan masyarakat Minang.')">Lihat Detail</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri">
+        <div class="section-title">
+            <h2>Galeri Foto</h2>
+            <p>Kumpulan foto keindahan Sumatera Barat.</p>
+        </div>
+        <div class="gallery-container">
+            <img src="images/hero.jpg" alt="Hero Sumatera Barat" onclick="openGallery(this.src)" />
+            <img src="images/ngarai-sianok.jpg" alt="Ngarai Sianok" onclick="openGallery(this.src)" />
+            <img src="images/pacu-jawi.jpg" alt="Pacu Jawi" onclick="openGallery(this.src)" />
+            <img src="images/lamang.jpg" alt="Lamang" onclick="openGallery(this.src)" />
+            <img src="images/teh-talua.jpg" alt="Teh Talua" onclick="openGallery(this.src)" />
+            <img src="images/aia-kawa.jpg" alt="Aia Kawa" onclick="openGallery(this.src)" />
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking">
+        <div class="section-title">
+            <h2>Booking Wisata</h2>
+            <p>Rencanakan perjalanan wisata Anda bersama kami.</p>
+        </div>
+        <form class="booking-form" id="bookingForm">
+            <input type="text" placeholder="Nama Lengkap" id="nama" required />
+            <input type="email" placeholder="Email" id="email" required />
+            <input type="tel" placeholder="Nomor Telepon" id="telepon" required />
+            <select id="destinasi" required>
+                <option value="">Pilih Destinasi</option>
+                <option value="Jam Gadang">Jam Gadang - Bukittinggi</option>
+                <option value="Danau Maninjau">Danau Maninjau - Agam</option>
+                <option value="Lembah Harau">Lembah Harau - Lima Puluh Kota</option>
+                <option value="Pantai Air Manis">Pantai Air Manis - Padang</option>
+                <option value="Ngarai Sianok">Ngarai Sianok - Bukittinggi</option>
+            </select>
+            <input type="date" id="tanggal" required />
+            <input type="number" placeholder="Jumlah Peserta" id="peserta" min="1" required />
+            <textarea placeholder="Pesan atau kebutuhan perjalanan" id="pesan"></textarea>
+            <button type="submit">Kirim Booking</button>
+        </form>
+    </section>
+
+    <!-- DEVELOPER -->
+    <section class="developer">
+        <h2>Pesona Sumatera Barat</h2>
+        <p>Developer: Rizky</p>
+        <p>Developed by XREZZKY</p>
+    </section>
+
+    <!-- MODAL DETAIL -->
+    <div id="detailModal" class="image-modal">
+        <div class="detail-box">
+            <span onclick="closeDetail()" class="close-btn">&times;</span>
+            <img id="detailImage" src="" alt="Detail" />
+            <h2 id="detailTitle"></h2>
+            <p id="detailText"></p>
+        </div>
+    </div>
+
+    <!-- MODAL GALERI -->
+    <div id="galleryModal" class="image-modal">
+        <span onclick="closeGallery()" class="close-btn">&times;</span>
+        <img id="galleryImage" src="" alt="Gallery" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+          </html>
