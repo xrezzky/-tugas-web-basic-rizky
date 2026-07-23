@@ -10,18 +10,31 @@ window.addEventListener('load', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const menu = document.querySelector('.menu');
-    
+
     if (hamburger) {
         hamburger.addEventListener('click', () => {
             menu.classList.toggle('active');
         });
     }
 
-    // Tutup menu saat klik link
     document.querySelectorAll('.menu a').forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('active');
         });
+    });
+});
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
     });
 });
 
@@ -85,7 +98,7 @@ document.getElementById('galleryModal').addEventListener('click', (e) => {
 // ===== BOOKING FORM =====
 document.getElementById('bookingForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const nama = document.getElementById('nama').value.trim();
     const email = document.getElementById('email').value.trim();
     const telepon = document.getElementById('telepon').value.trim();
@@ -94,7 +107,6 @@ document.getElementById('bookingForm').addEventListener('submit', function(e) {
     const peserta = document.getElementById('peserta').value;
     const pesan = document.getElementById('pesan').value.trim();
 
-    // Validasi
     if (!nama || !email || !telepon || !destinasi || !tanggal || !peserta) {
         showNotification('Mohon lengkapi semua data yang diperlukan.');
         return;
@@ -105,7 +117,6 @@ document.getElementById('bookingForm').addEventListener('submit', function(e) {
         return;
     }
 
-    // Simulasi kirim data
     const bookingData = {
         nama,
         email,
@@ -123,7 +134,6 @@ document.getElementById('bookingForm').addEventListener('submit', function(e) {
 
 // ===== NOTIFICATION =====
 function showNotification(message) {
-    // Hapus notifikasi lama jika ada
     const oldNotif = document.querySelector('.notification');
     if (oldNotif) {
         oldNotif.remove();
@@ -134,12 +144,10 @@ function showNotification(message) {
     notif.textContent = message;
     document.body.appendChild(notif);
 
-    // Trigger animasi
     setTimeout(() => {
         notif.classList.add('show');
     }, 10);
 
-    // Auto hide
     setTimeout(() => {
         notif.classList.remove('show');
         setTimeout(() => {
@@ -149,7 +157,6 @@ function showNotification(message) {
 }
 
 // ===== HERO IMAGE FALLBACK =====
-// Jika gambar hero gagal dimuat, gunakan background color
 document.getElementById('heroImage').addEventListener('error', function() {
     this.style.display = 'none';
     this.parentElement.style.background = 'linear-gradient(135deg, #1e3b2c, #2a5a3f)';
